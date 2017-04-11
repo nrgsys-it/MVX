@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVX", "MVX\MVX.csproj", "{133BA9B4-1689-4BAB-8BD6-99A4357D1162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVX.Tests", "MVX.Tests\MVX.Tests.csproj", "{2EB406A0-076D-414E-A01D-D00F42C927A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVX.Samples.ToDoList", "Samples\MVX.Samples.ToDoList\MVX.Samples.ToDoList.csproj", "{91DAF87A-3081-4EE5-B97F-45B77720683A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{133BA9B4-1689-4BAB-8BD6-99A4357D1162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133BA9B4-1689-4BAB-8BD6-99A4357D1162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133BA9B4-1689-4BAB-8BD6-99A4357D1162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133BA9B4-1689-4BAB-8BD6-99A4357D1162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB406A0-076D-414E-A01D-D00F42C927A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB406A0-076D-414E-A01D-D00F42C927A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB406A0-076D-414E-A01D-D00F42C927A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB406A0-076D-414E-A01D-D00F42C927A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DAF87A-3081-4EE5-B97F-45B77720683A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DAF87A-3081-4EE5-B97F-45B77720683A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DAF87A-3081-4EE5-B97F-45B77720683A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DAF87A-3081-4EE5-B97F-45B77720683A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

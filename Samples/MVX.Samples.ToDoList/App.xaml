@@ -1,0 +1,16 @@
+﻿<Application x:Class="MVX.Samples.ToDoList.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MVX.Samples.ToDoList"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <!-- evitiamo di usare un ioc container, però serve cmq un service locator per wpf 
+         per il db usiamo una semplice concurrentbag injectata dal service locator -->
+    <!-- le funzionalità da implementare saranno:
+         * aggiungere to-do
+         * modificare testo to-do
+         * eliminare to-do
+         * segnare to-do come fatti (archivio)
+         * vedere to-do: tutti, da fare, completati -->
+  </Application.Resources>
+</Application>
