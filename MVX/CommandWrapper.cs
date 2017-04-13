@@ -48,7 +48,9 @@ namespace MVX
     private void RaiseCanExecuteChanged()
     {
       if (CanExecuteChanged == null) return;
-      Task.Run(() => ApplicationDispatcherHelper.Invoke(() => CanExecuteChanged(this, EventArgs.Empty)));
+      Task.Run(() => {
+        ApplicationDispatcher.Invoke(() => CanExecuteChanged(this, EventArgs.Empty));
+      });
     }
   }
 }

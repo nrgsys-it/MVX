@@ -16,7 +16,7 @@ namespace MVX
 
     protected void UpdateViewStore(Action<TStore> actionToCommit)
     {
-      ApplicationDispatcherHelper.Invoke(() =>
+      ApplicationDispatcher.Invoke(() =>
       {
         actionToCommit(ViewStore);
         ViewStore.Refresh();
@@ -25,7 +25,7 @@ namespace MVX
 
     protected void RegenerateStore()
     {
-      ApplicationDispatcherHelper.Invoke(() =>
+      ApplicationDispatcher.Invoke(() =>
       {
         ViewStore = new TStore();
         Refresh();

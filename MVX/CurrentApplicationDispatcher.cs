@@ -3,9 +3,9 @@ using System.Windows;
 
 namespace MVX
 {
-  internal static class ApplicationDispatcherHelper
+  internal class CurrentApplicationDispatcher : IDispatchActions
   {
-    public static void Invoke(Action action)
+    public void Invoke(Action action)
     {
       Application.Current.Dispatcher.Invoke(action);
     }
