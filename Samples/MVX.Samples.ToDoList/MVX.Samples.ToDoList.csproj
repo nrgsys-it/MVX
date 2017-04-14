@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Actions\NewToDoItemActions.cs" />
+    <Compile Include="Data\ToDoItemsBag.cs" />
+    <Compile Include="Models\ToDoItem.cs" />
     <Compile Include="ServiceLocatorForWpf.cs" />
     <Compile Include="ViewModels\RootViewModel.cs" />
     <Page Include="Views\MainWindow.xaml">

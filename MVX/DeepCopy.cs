@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace System
 {
-  internal static class ObjectExtensions
+  public static class ObjectExtensions
   {
     private static readonly MethodInfo CloneMethod = typeof(Object).GetMethod("MemberwiseClone", BindingFlags.NonPublic | BindingFlags.Instance);
 

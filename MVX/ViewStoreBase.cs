@@ -8,8 +8,7 @@ namespace MVX
 
     public void Refresh()
     {
-      var handler = PropertyChanged;
-      if (handler != null) handler(this, new PropertyChangedEventArgs(string.Empty));
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));
     }
   }
 }

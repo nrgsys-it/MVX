@@ -20,6 +20,7 @@ namespace MVX
       {
         actionToCommit(ViewStore);
         ViewStore.Refresh();
+        Refresh();
       });
     }
 
@@ -34,8 +35,8 @@ namespace MVX
 
     private void Refresh()
     {
-      if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(string.Empty));
-      if (ViewStore != null) ViewStore.Refresh();
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));
+      ViewStore?.Refresh();
     }
   }
 }
