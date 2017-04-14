@@ -10,7 +10,7 @@ namespace MVX.Samples.ToDoList.ViewModels
   * eliminare to-do
   * segnare to-do come fatti(archivio)
   * vedere to-do: tutti, da fare, completati */
-  internal class RootViewModel : ViewModelBase<RootViewModel.State>
+  internal class RootViewModel : ViewModelBase<RootViewModel.Store>
   {
     private readonly NewToDoItemActions _newToDoItemActions;
 
@@ -19,6 +19,13 @@ namespace MVX.Samples.ToDoList.ViewModels
       _newToDoItemActions = newToDoItemActions;
       DispatchCheckNewToDoText = _newToDoItemActions.CheckText.ToCommand(this);
       DispatchAddToDo = _newToDoItemActions.Add.ToCommand(this);
+    }
+
+    internal class Store : ViewStoreBase
+    {
+      public string NewToDoItemText { get; set; }
+      public bool CanAddNewToDoItem { get; set; }
+      public List<ToDoItem> ToDoItems { get; set; }
     }
 
     public string NewToDoItemText
@@ -48,13 +55,6 @@ namespace MVX.Samples.ToDoList.ViewModels
         store.ToDoItems = toDoItems;
         store.NewToDoItemText = string.Empty;
       });
-    }
-
-    internal class State : ViewStoreBase
-    {
-      public string NewToDoItemText { get; set; }
-      public bool CanAddNewToDoItem { get; set; }
-      public List<ToDoItem> ToDoItems { get; set; }
     }
   }
 }
